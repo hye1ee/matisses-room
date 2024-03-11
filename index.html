@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="flex-col">
+    <div class="flex-col title-container">
+      <div style="width: 600px">
+        <img src="assets/main/title_top.png" />
+      </div>
+      <div style="width: 400px">
+        <img src="assets/main/title_bottom.png" />
+      </div>
+    </div>
+    <div class="flex-col window-container">
+      <img
+        class="window-img window-animate"
+        style="z-index: 6"
+        src="assets/main/window_inside.png"
+      />
+      <img
+        class="window-img"
+        src="assets/main/window_outside.png"
+        style="z-index: 5"
+      />
+
+      <img
+        class="window-img"
+        style="z-index: 1"
+        src="assets/main/landing.png"
+      />
+    </div>
+    <!-- <div class="clue-button">
+      <img src="assets/main/clue.png" />
+    </div> -->
+  </body>
+  <script type="module" src="index.js"></script>
+</html>

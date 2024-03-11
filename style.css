@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Encode+Sans+SC:wght@100..900&display=swap");
+html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+
+  font-family: "Encode Sans SC", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.clue-button {
+  width: 100px;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  transition: all 0.1s;
+  z-index: 50;
+  &:hover {
+    width: 150px;
+  }
+}
+
+.title-container {
+  position: relative;
+  top: 20px;
+  z-index: 10;
+}
+
+.window-container {
+  width: 450px;
+  height: 670px;
+
+  position: relative;
+  border-radius: 500px 500px 0 0;
+  overflow: hidden;
+}
+.window-img {
+  position: absolute;
+}
+.window-animate {
+  width: 90%;
+  height: auto;
+  cursor: pointer;
+  transition: all 1s;
+  &:hover {
+    transform: translateY(-600px);
+  }
+}
