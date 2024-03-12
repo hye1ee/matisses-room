@@ -20,6 +20,6 @@ window.addEventListener("keydown", (evt) => {
   } else if (evt.key === "o") {
     document.getElementById("circus3").style.animation = NaN;
   } else if (evt.key === "p") {
-    window.location.replace(window.location.origin + "/madame.html");
+    window.location.replace(window.location.origin + "/codomas.html");
   }
 });
