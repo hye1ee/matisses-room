@@ -1,4 +1,5 @@
 import { Clue } from "./clue.js";
+import { navigateTo } from "./utils.js";
 
 // Main Function
 document.body.appendChild(
@@ -20,6 +21,7 @@ window.addEventListener("keydown", (evt) => {
   } else if (evt.key === "o") {
     document.getElementById("circus3").style.animation = NaN;
   } else if (evt.key === "p") {
-    window.location.replace(window.location.origin + "/codomas.html");
+    navigateTo("codomas.html");
+    // window.location.replace(window.location.origin + "/codomas.html");
   }
 });

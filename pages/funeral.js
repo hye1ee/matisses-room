@@ -1,4 +1,5 @@
 import { Clue } from "./clue.js";
+import { navigateTo } from "./utils.js";
 
 // Main Function
 document.body.appendChild(Clue("The horse likes rules"));
@@ -20,6 +21,7 @@ window.addEventListener("keydown", (evt) => {
   ).style.transform = `translate(${x}px, ${y}px)`;
 
   if (x == 205 && y == -130) {
-    window.location.replace(window.location.origin + "/madame.html");
+    navigateTo("madame.html");
+    // window.location.replace(window.location.origin + "/madame.html");
   }
 });

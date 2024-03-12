@@ -1,4 +1,5 @@
 import { Clue } from "./pages/clue.js";
+import { navigateTo } from "./pages/utils.js";
 
 // Main Function
 document.body.appendChild(
@@ -11,7 +12,8 @@ const knock = [];
 document.getElementById("window-inside").addEventListener("click", (evt) => {
   knock.push("knock");
   if (knock.length == 5) {
-    window.location.replace(window.location.origin + "/funeral.html");
+    navigateTo("funeral.html");
+    // window.location.replace(window.location.origin + "/funeral.html");
   }
 });
 

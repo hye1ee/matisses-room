@@ -1,4 +1,5 @@
 import { Clue } from "./clue.js";
+import { navigateTo } from "./utils.js";
 
 // Main Function
 document.body.appendChild(
@@ -32,7 +33,8 @@ document.addEventListener("wheel", (evt) => {
       "codomas3"
     ).style.transform = `translate(${asset3X}px,0)`;
     if (asset3X == 0) {
-      window.location.replace(window.location.origin + "/icarus.html");
+      navigateTo("icarus.html");
+      // window.location.replace(window.location.origin + "/icarus.html");
     }
   }
 });

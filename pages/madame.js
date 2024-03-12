@@ -1,4 +1,5 @@
 import { Clue } from "./clue.js";
+import { navigateTo } from "./utils.js";
 
 // Main Function
 document.body.appendChild(
@@ -6,5 +7,6 @@ document.body.appendChild(
 );
 
 document.getElementById("mouth").addEventListener("click", () => {
-  window.location.replace(window.location.origin + "/circus.html");
+  navigateTo("circus.html");
+  // window.location.replace(window.location.origin + "/circus.html");
 });

@@ -1,4 +1,5 @@
 import { Clue } from "./clue.js";
+import { navigateTo } from "./utils.js";
 
 // Main Function
 document.body.appendChild(Clue("Can you draw a star for me?\n9 10 8 11 9 9"));
@@ -29,7 +30,8 @@ const checkOrder = () => {
     setTimeout(() => {
       Overlay.style.opacity = 1;
       setTimeout(() => {
-        window.location.replace(window.location.origin + "/dne.html");
+        navigateTo("dne.html");
+        // window.location.replace(window.location.origin + "/dne.html");
       }, 2000);
     }, 100);
   }
