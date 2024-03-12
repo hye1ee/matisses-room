@@ -273,10 +273,47 @@ img {
   bottom: 30px;
   left: 150px;
 }
+.before-start {
+  width: 170px;
+  cursor: pointer;
+
+  position: absolute;
+  top: 50px;
+  right: 40px;
+  z-index: 999;
+
+  &:hover {
+    opacity: 0.4;
+  }
+}
+.before-overlay {
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: all 1s;
+  z-index: 998;
+
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-weight: 300;
+  color: white;
+  line-height: 1.5;
+  align-items: center;
+  justify-content: center;
+}
+.bold {
+  font-weight: 600;
+}
 
 .title-container {
   position: relative;
-  top: 20px;
+  bottom: -40px;
   z-index: 10;
 }
 
@@ -285,6 +322,7 @@ img {
   height: 670px;
 
   position: relative;
+  bottom: 40px;
   border-radius: 500px 500px 0 0;
   overflow: hidden;
 }

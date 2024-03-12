@@ -14,3 +14,10 @@ document.getElementById("window-inside").addEventListener("click", (evt) => {
     window.location.replace(window.location.origin + "/funeral.html");
   }
 });
+
+document.getElementById("before-start").addEventListener("mouseover", () => {
+  document.getElementById("before-overlay").style.opacity = 1;
+});
+document.getElementById("before-start").addEventListener("mouseout", () => {
+  document.getElementById("before-overlay").style.opacity = 0;
+});
